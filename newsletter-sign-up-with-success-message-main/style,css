@@ -8,8 +8,8 @@ body{
    color:hsl(235, 18%, 26%);
 }
 .signup-container {
-  width: 870px;
-  height: 650px;
+  width: 900px;
+  height: 630px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -29,43 +29,41 @@ body{
   color:hsl(235, 18%, 26%);
   justify-content: center;
   align-items: center;
- 
+  
+  margin-left:60px;
 }
 .signup-header{
   color:hsl(235, 18%, 26%);
   font-size:45px;
   margin-top:100px !important;
   margin-left:40px;
- 
+ font-weight 700;
 }
 p{
   font-size:16px;
   color:hsl(235, 18%, 26%);
   margin-left:10px;
- 
+ line-height: 24px;
 }
 .update-list{
   width:400px;
   text-align:left;
-  
+  margin-left:15px;
  
 }
 .icon{
   margin-right:10px !important;
-  
- 
- 
 }
 li{
    margin-left:-39px;
    list-style: none;
    white-space: nowrap;  
-  
+   padding:5px;
   
 }
 .image {
   margin-right:20px;
-  margin-left:10px;
+  margin-left:20px;
 }
  #signup-form {
             max-width: 400px;
@@ -80,32 +78,35 @@ li{
             font-size:14px;
         }
 .email-input {
-            width: 80%;
+            width: 85%;
             padding: 10px;
             margin-bottom: 20px;
-            border: 1px solid hsl(235, 18%, 26%);
+            border: 1px solid hsl(231, 7%, 60%);
             border-radius: 5px;
              cursor: pointer;
         }
+.email-input:focus {
+    border: 1px solid hsl(231, 7%, 60%);
+}
   .submit-button {
                width: 80%;
-           background: linear-gradient(to right, hsl(4, 100%, 67%), hsl(40, 100%, 67%));
-              box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-
+            background: linear-gradient(to right,#ff4272  0%,#ffb369 100%); 
+             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+             transition: all .3s ease-in-out;
             color: #fff;
             padding: 10px 20px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
              font-size:16px;
+            font-weight 400;
+    
         }
 .submit-button:hover {
-            background-color: #0056b3;
+            background-color: #ff4272;
+            
         }
 
-.success-message{
-  display:none;
-}
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -117,4 +118,94 @@ li{
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+#success {
+  display: none;
+ 
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  height:450px;
+}
+
+#success img {
+  max-width: 50px;
+  height: auto;
+  margin-top:10%;
+  margin-left: 20%;
+}
+
+.success-text {
+  color:hsl(235, 18%, 26%);
+  font-size:30px;
+ font-weight 700;
+  margin-left: 10px;
+   text-align:center;
+}
+p{
+   font-size: 16px;
+  margin-left: 10px;
+   text-align:center;
+   color:hsl(235, 18%, 26%);
+}
+.dismiss-button  {
+               width: 80%;
+            background: linear-gradient(to right,#ff4272  0%,#ffb369 100%); 
+             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+             transition: all .3s ease-in-out;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+             font-size:16px;
+            font-weight 400;
+            text-align:center;
+   margin-top:40px;
+  margin-left: 50px;
+        }
+
+.dismiss-button:hover {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+@media screen and (min-width: 1440px) {
+  /* Your CSS rules for screens with a width of 1440px or larger go here */
+  body {
+    /* Your styles for the body element in this media query go here */
+  }
+
+  .signup-container {
+    /* Your styles for the signup-container in this media query go here */
+  }
+
+  .content {
+    /* Your styles for the content in this media query go here */
+  }
+
+  /* Add styles for other elements as needed within this media query */
+}
+@media screen and (min-width:  375px) { 
+  /* Your CSS rules for screens with a width of 1440px or larger go here */
+  body {
+    /* Your styles for the body element in this media query go here */
+  }
+
+  .signup-container {
+    /* Your styles for the signup-container in this media query go here */
+  }
+
+  .content {
+    /* Your styles for the content in this media query go here */
+  }
+
+  /* Add styles for other elements as needed within this media query */
+}
+
 
