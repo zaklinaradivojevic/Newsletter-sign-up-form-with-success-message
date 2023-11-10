@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -14,7 +14,7 @@
 
 </head>
 <body>
-  <div class="signup-container">
+  <div class="signup-container" id="signup">
     <div class="content">
       <h2 class="signup-header">Stay updated!</h2>
       <p>Join 60,000+ product managers receiving monthly updates on:</p>
@@ -43,12 +43,13 @@
 
   
 
-  <div class="success-message">
+  <div class="success-message" id="success" style="display: none;">
     <!-- Success message start -->
+    <img src="https://raw.githubusercontent.com/zaklinaradivojevic/Newsletter-sign-up-form-with-success-message/7c0cfdce7a143839afe6496cb7af1e38b269aca5/newsletter-sign-up-with-success-message-main/assets/images/icon-success.svg">
     <p class="success-text">Thanks for subscribing!</p>
     <p>A confirmation email has been sent to ash@loremcompany.com.</p>
     <p>Please open it and click the button inside to confirm your subscription.</p>
-    <button class="dismiss-button">Dismiss message</button>
+    <button class="dismiss-button" onclick="dismissSuccessMessage()">Dismiss message</button>
     <!-- Success message end -->
   </div>
 
@@ -57,6 +58,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+   <script src="script.js"></script>
 </body>
 </html>
- 
