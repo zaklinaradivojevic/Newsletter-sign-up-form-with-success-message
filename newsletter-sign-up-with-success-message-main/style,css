@@ -192,20 +192,47 @@ p{
   /* Add styles for other elements as needed within this media query */
 }
 @media screen and (min-width:  375px) { 
-  /* Your CSS rules for screens with a width of 1440px or larger go here */
-  body {
-    /* Your styles for the body element in this media query go here */
-  }
+
+ body{
+  background:hsl(235, 18%, 26%);
+  font-family:Roboto;
+  width:100vw;
+  height:100vh;
+   color:hsl(235, 18%, 26%);
+}
 
   .signup-container {
-    /* Your styles for the signup-container in this media query go here */
+    display: flex;
+    flex-direction: column; 
+    width:400px;
+    height:auto;
   }
 
   .content {
-    /* Your styles for the content in this media query go here */
+    margin:0 auto;
   }
 
-  /* Add styles for other elements as needed within this media query */
+  .image {
+    background-image: url('https://raw.githubusercontent.com/zaklinaradivojevic/Newsletter-sign-up-form-with-success-message/7537ed03bdc2a35fc1f2c2c8866cf3ca514789e6/newsletter-sign-up-with-success-message-main/assets/images/illustration-sign-up-mobile.svg');
+  margin:0 auto;
+    order: -1; 
+   align-self: flex-start;
+  }
+   .submit-button {
+               width: 80%;
+            background: linear-gradient(to right,#ff4272  0%,#ffb369 100%); 
+             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+             transition: all .3s ease-in-out;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+             font-size:16px;
+            font-weight 400;
+     margin-left:30px;
+    
+        }
 }
 
 
